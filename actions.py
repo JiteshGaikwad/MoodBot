@@ -24,8 +24,12 @@ class ActionHelloWorld(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-       
-        data = getData("select * from customer")
+        # write the sql query here.
+        query = "select * from customer"
+        
+        #pass the sql query to the getData method and store the results in `data` variable.
+        data = getData(query)
+        
         print("data: ",data)
 
         dispatcher.utter_message(text="Hello World!",json_message=data)
