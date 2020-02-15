@@ -19,7 +19,7 @@ def getData(query:str):
             mydb = mysql.connector.connect(
                 host="localhost",
                 user="root",
-                passwd="Rasa@1234",
+                passwd="root",
                 database="test"
                 )
 
