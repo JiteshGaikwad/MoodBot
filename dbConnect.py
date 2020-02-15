@@ -31,7 +31,7 @@ def getData(query:str):
             results = cursor.fetchall()
             return results
         except:
-            print("Error occured while connecting to database or fetching data from database.Error Trace: {}".format(traceback.format_exc()))
+            print("Error occured while connecting to database or fetching data from database. Error Trace: {}".format(traceback.format_exc()))
             return []
 
 # test the file before integrating with the bot by uncommenting the below line.
