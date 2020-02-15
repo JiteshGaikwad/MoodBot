@@ -23,11 +23,11 @@ def getData(query:str):
                 database="test"
                 )
 
-            #set up the cursor to execute the query
+            # set up the cursor to execute the query
             cursor = mydb.cursor()
             cursor.execute(query)
 
-            #fetch all rows from the last executed statement using `fetchall method`.
+            # fetch all rows from the last executed statement using `fetchall method`.
             results = cursor.fetchall()
             return results
         except:
